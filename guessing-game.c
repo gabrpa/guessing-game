@@ -25,7 +25,7 @@ void randomF()
         else
         {
             printf("Valor incorreto. Por favor, escolha um número entre 0 e 10:\n");
-            while (getchar() != '\n')
+            while (getchar() != '\n') // remove caracteres inválidos do buffer;
                 ;
         }
     }
@@ -33,7 +33,7 @@ void randomF()
 
 int main()
 {
-    srand(time(NULL));
+    srand(time(NULL)); // gera um novo número secreto a cada execução;
     printf("**************************************\n");
     printf("Bem vindo ao nosso jogo de adivinhação\n");
     printf("**************************************\n");
